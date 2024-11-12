@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home1">
+
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Rates and Comments"
+        android:textColor="#FF5722"
+        android:textSize="20sp" />
+
+    <!-- EditText for search (Initially hidden) -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        android:hint="Search"
+        android:padding="10dp"
+        android:layout_marginBottom="50px"/>
+
+    <!-- Search button to toggle visibility of search EditText -->
+    <ImageButton
+        android:id="@+id/button_search"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="57dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="search"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/searchjpg" />
+
+    <!-- Add button to open Publish activity -->
+
+    <!-- View acting as a separator -->
+    <ImageButton
+        android:id="@+id/button_export"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="111dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Add"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/export" />
+
+    <ImageButton
+        android:id="@+id/button_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Add"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/orange" />
+
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/textView3"
+        android:background="#FF5722" />
+
+    <!-- RecyclerView for displaying a list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="588dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        tools:listitem="@layout/row2" />
+
+
+</RelativeLayout>

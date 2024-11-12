@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home2">
+
+    <!-- TextView for the title -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Reclamation"
+        android:textColor="#65047C"
+        android:textSize="27sp" />
+
+
+    <ImageButton
+        android:id="@+id/button_plus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="Add"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/noire" />
+
+
+
+
+
+
+    <!-- View acting as a separator -->
+    <View
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="8dp"
+        android:background="#65047C" /> <!-- Ensure orange exists in res/colors.xml -->
+
+    <!-- RecyclerView for displaying a list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/separatorView"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        tools:listitem="@layout/row5" />
+
+</RelativeLayout>

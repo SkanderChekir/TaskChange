@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/menu_service"
+        android:title="Service" />
+    <item
+        android:id="@+id/menu_rateCom"
+        android:title="RateCom" />
+    <item
+        android:id="@+id/menu_reclamation"
+        android:title="Reclamation" />
+    <item
+        android:id="@+id/menu_card"
+        android:title="Cards" />
+</menu>
