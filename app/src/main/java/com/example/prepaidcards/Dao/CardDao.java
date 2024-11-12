@@ -27,5 +27,10 @@ public interface CardDao {
 
     @Query("SELECT * FROM Card WHERE id = :id")
     Card getCardById(int id);
+
+    @Query("SELECT * FROM card WHERE description = :description LIMIT 1")
+    Card getCardByDescription(String description);
+
+
 }
 

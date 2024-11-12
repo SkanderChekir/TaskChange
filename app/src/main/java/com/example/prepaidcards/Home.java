@@ -7,15 +7,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.room.Room;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
-
 import com.example.prepaidcards.Database.CardDatabase;
 import com.example.prepaidcards.Entity.Card;
-
 import java.util.List;
 
 public class Home extends Fragment {
@@ -36,6 +34,7 @@ public class Home extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        // Initialize RecyclerView
         recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -47,7 +46,17 @@ public class Home extends Fragment {
         // Load cards from the database and update UI
         loadCards();
 
-        // Find the "Plus" button and set the click listener
+        // Set up the button for going to the front activity
+        Button goToFrontButton = view.findViewById(R.id.goToFrontButton);
+        goToFrontButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), UserCreditsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // Handle the "Plus" button click
         ImageButton buttonPlus = view.findViewById(R.id.button_plus);
         buttonPlus.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), Publish.class);
@@ -67,11 +76,11 @@ public class Home extends Fragment {
 
                 getActivity().runOnUiThread(() -> {
                     if (adapter == null) {
-                        // Initialiser l'adaptateur et gérer les clics pour mise à jour
+                        // Initializing adapter and setting up click listener for updating cards
                         adapter = new CardAdapter(getActivity(), cards, db, card -> {
-                            // Créer une intention pour ouvrir Publish en mode mise à jour
+                            // Intent to open Publish in update mode
                             Intent intent = new Intent(getActivity(), Publish.class);
-                            intent.putExtra("card_id", card.id);  // Passer l'ID du card pour mise à jour
+                            intent.putExtra("card_id", card.id);  // Pass card ID for updating
                             startActivity(intent);
                         });
                         recyclerView.setAdapter(adapter);
