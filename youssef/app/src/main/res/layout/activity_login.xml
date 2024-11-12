@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingClass">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        tools:context=".LoginActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Purple Header Section at the Top -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="395dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/purple_700"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView_login_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Welcome !"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView_login_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please log in to continue"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Main Content Section Positioned Below the Purple Layout -->
+    <LinearLayout
+        android:id="@+id/mainContent"
+        android:layout_width="match_parent"
+        android:layout_height="594dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/border"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_below="@id/headerLayout"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/RL_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:padding="10dp">
+
+            <!-- Email Icon on the Left -->
+            <ImageView
+                android:id="@+id/imageViewEmail"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_email" />
+
+            <TextView
+                android:id="@+id/textView_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageViewEmail"
+                android:padding="6dp"
+                android:text="  Email" />
+            <View
+                android:id="@+id/divider_email"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/textView_login_email"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/darker_gray" />
+
+
+
+            <!-- Email EditText to the Right of the ImageView -->
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_login_email"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/imageViewEmail"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:hint="Enter email"                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:minHeight="48dp"
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/RL_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RL_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border">
+            <ImageView
+                android:id="@+id/imageViewPwd"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_pwd_bw" />
+            <TextView
+                android:id="@+id/textView_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/imageViewPwd"
+                android:padding="6dp"
+                android:text="Password*" />
+            <View
+                android:id="@+id/divider_pwd"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/textView_login_pwd"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/darker_gray" />
+
+
+            <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="260dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/imageViewPwd"
+                android:padding="6dp"
+                android:layout_below="@id/textView_login_pwd"
+                android:layout_height="wrap_content"
+            android:hint="@string/enterpasssword"
+            android:inputType="textPassword"
+            android:autofillHints="password" />
+        </RelativeLayout>
+        <!-- Forgot Password TextView -->
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple_700"
+            android:clipToOutline="true"
+            android:elevation="4dp"
+            android:minWidth="250dp"
+            android:padding="12dp"
+            android:text="@string/login" />
+
+        <!-- Sign Up TextView -->
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Don’t have an account? Sign Up"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
