@@ -1,0 +1,166 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.blogappll"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10    <!-- Add these to your AndroidManifest.xml -->
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:5:5-80
+11-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+12-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:6:5-8:32
+12-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:7:9-60
+13
+14    <permission
+14-->[androidx.core:core:1.13.0] C:\Users\wassi\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+15        android:name="com.example.blogappll.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+15-->[androidx.core:core:1.13.0] C:\Users\wassi\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+16        android:protectionLevel="signature" />
+16-->[androidx.core:core:1.13.0] C:\Users\wassi\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+17
+18    <uses-permission android:name="com.example.blogappll.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+18-->[androidx.core:core:1.13.0] C:\Users\wassi\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.13.0] C:\Users\wassi\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+19
+20    <application
+20-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:10:5-40:19
+21        android:allowBackup="true"
+21-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:11:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.13.0] C:\Users\wassi\.gradle\caches\transforms-4\42dfdf811721b94244c28f65a2afec29\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+23        android:dataExtractionRules="@xml/data_extraction_rules"
+23-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:12:9-65
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:fullBackupContent="@xml/backup_rules"
+26-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:13:9-54
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:14:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:15:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:16:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:17:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.BlogAppLL" >
+32-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:18:9-47
+33        <activity
+33-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:20:9-22:39
+34            android:name="com.example.blogappll.ReclamationDetails"
+34-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:21:13-47
+35            android:exported="true" />
+35-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:22:13-36
+36
+37        <!-- Activities -->
+38        <activity
+38-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:25:9-27:39
+39            android:name="com.example.blogappll.Publish"
+39-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:26:13-36
+40            android:exported="true" /> <!-- Keep exported false if internal use only -->
+40-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:27:13-36
+41        <activity
+41-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:28:9-30:39
+42            android:name="com.example.blogappll.Home"
+42-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:29:13-33
+43            android:exported="true" /> <!-- exported=true if accessible externally -->
+43-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:30:13-36
+44        <activity
+44-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:31:9-39:20
+45            android:name="com.example.blogappll.MainActivity"
+45-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:32:13-41
+46            android:exported="true" >
+46-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:33:13-36
+47            <intent-filter>
+47-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:34:13-38:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:35:17-69
+48-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:35:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:37:17-77
+50-->C:\Users\wassi\Desktop\BlogAppLL\BlogAppLL\app\src\main\AndroidManifest.xml:37:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <service
+54-->[androidx.room:room-runtime:2.4.3] C:\Users\wassi\.gradle\caches\transforms-4\dae0a8221384814b2dad58bc2f7de383\transformed\room-runtime-2.4.3\AndroidManifest.xml:25:9-28:40
+55            android:name="androidx.room.MultiInstanceInvalidationService"
+55-->[androidx.room:room-runtime:2.4.3] C:\Users\wassi\.gradle\caches\transforms-4\dae0a8221384814b2dad58bc2f7de383\transformed\room-runtime-2.4.3\AndroidManifest.xml:26:13-74
+56            android:directBootAware="true"
+56-->[androidx.room:room-runtime:2.4.3] C:\Users\wassi\.gradle\caches\transforms-4\dae0a8221384814b2dad58bc2f7de383\transformed\room-runtime-2.4.3\AndroidManifest.xml:27:13-43
+57            android:exported="false" />
+57-->[androidx.room:room-runtime:2.4.3] C:\Users\wassi\.gradle\caches\transforms-4\dae0a8221384814b2dad58bc2f7de383\transformed\room-runtime-2.4.3\AndroidManifest.xml:28:13-37
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+61            android:authorities="com.example.blogappll.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.3.0] C:\Users\wassi\.gradle\caches\transforms-4\51f1927f6706bb4e824223b170abb02f\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wassi\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wassi\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\wassi\.gradle\caches\transforms-4\fab565b32d1caf7d32cc0e9c5a768a04\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <receiver
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+75            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+76            android:directBootAware="false"
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+77            android:enabled="true"
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+78            android:exported="true"
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+79            android:permission="android.permission.DUMP" >
+79-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+81                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+84                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+87                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+88            </intent-filter>
+89            <intent-filter>
+89-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+90                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\wassi\.gradle\caches\transforms-4\7c6c24dcca5059c7b3ce34791d5d98cd\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+91            </intent-filter>
+92        </receiver>
+93    </application>
+94
+95</manifest>
