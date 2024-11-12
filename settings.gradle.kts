@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "CreditManagementApp"
+rootProject.name = "PrepaidCards"
 include(":app")
+ 
